@@ -2,4 +2,6 @@ mkdir freebsd
 cd freebsd
 curl -O https://pixbahaa.github.io/free-bsd/root.sh
 curl -O https://pixbahaa.github.io/free-bsd/user.sh
-curl -s https://pixbahaa.github.io/free-bsd/setup.sh | sh
+curl -O https://pixbahaa.github.io/free-bsd/setup.sh
+chmod +x root.sh user.sh setup.sh
+sh setup.sh
