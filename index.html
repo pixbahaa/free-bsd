@@ -1,7 +1,11 @@
+#!/bin/sh
+
 mkdir freebsd
 cd freebsd
 curl -O https://pixbahaa.github.io/free-bsd/root.sh
 curl -O https://pixbahaa.github.io/free-bsd/user.sh
-curl -O https://pixbahaa.github.io/free-bsd/setup.sh
-chmod +x root.sh user.sh setup.sh
-sh setup.sh
+chmod +x root.sh user.sh
+su - root <<EOF
+./root.sh
+EOF
+./user.sh
