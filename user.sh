@@ -5,4 +5,4 @@ doas sysrc kld_list+=i915kms
 doas sysrc seatd_enable="YES"
 doas sysrc dbus_enable="YES"
 mkdir ~/.config/wayfire
-cp /usr/local/share/examples/wayfire/wayfire.ini ~/.config/wayfire
+cp wayfire.ini ~/.config/wayfire/
