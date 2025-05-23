@@ -4,5 +4,5 @@ doas pkg install -y drm-kmod xorg alacritty wayland seatd wayfire wf-shell swayl
 doas sysrc kld_list+=i915kms
 doas sysrc seatd_enable="YES"
 doas sysrc dbus_enable="YES"
-mkdir ~/.config/wayfire
-cp wayfire.ini ~/.config/wayfire/
+mkdir -p /home/bahaa/.config/wayfire
+cp /home/bahaa/freebsd/wayfire.ini /home/bahaa/.config/wayfire/
