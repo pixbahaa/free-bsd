@@ -1,3 +1,5 @@
+#/bin/sh
+
 doas pkg update
 doas pkg upgrade -y
 doas pkg install -y drm-kmod xorg alacritty wayland seatd wayfire wf-shell swaylock-effects swayidle wlogout kanshi slurp grim wofi wlsunset noto-sans noto-sans-mono noto-sans-arabic noto-emoji vim fastfetch
